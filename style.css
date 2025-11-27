@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-bg: #101010;
+  --color-text-main: #ffffff;
+  --color-text-muted: #f0f0f0;
+  --color-accent: #ffffff;
+  --color-accent-hover: #bbbbbb;
+  --color-header-link: #ffffff;
+  --color-header-link-hover: #bbbbbb;
+  --color-footer-text: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: 'Onest', sans-serif;
+  color: var(--color-text-main);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  padding: 20px 50px;
+  position: relative;
+  z-index: 10;
+}
+
+header nav a {
+  margin-right: 30px;
+  color: var(--color-header-link);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header nav a:hover {
+  color: var(--color-header-link-hover);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 26px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: opacity 0.3s;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  background: url('img/rainyweather/imgtitlerainyweather.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.content li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--color-text-main);
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.download-btn {
+  font-family: 'Onest';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 8px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 25px;
+}
+
+.download-btn:hover {
+  background: var(--color-accent-hover);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  color: var(--color-footer-text);
+}
